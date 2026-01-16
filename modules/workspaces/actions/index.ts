@@ -106,6 +106,8 @@ export async function createWorkspaces(name : string){
 
 
 export async function getWorkspaceById(id:string){
+  if(!id) return null;
+
   const workspace = await prisma.workspace.findUnique({
     where:{id},
     include:{
