@@ -87,7 +87,7 @@ const TabbedSidebar = ({ currentWorkspace }: Props) => {
                 collections.map((collection)=>(
                   <div className="flex flex-col justify-start items-start p-3 border-b" key={collection.id} >
 
-                    {/* this is where i left , you have to create the collections folder and resume from there */}
+                    {/* <CollectionFolder collection={collection} /> */}
 
                   </div>
                 ))
