@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import CreateCollection from "./create-collection";
 import EmptyCollections from "./empty-collections";
+import CollectionFolder from "./collection-folder";
 
 interface Props {
   currentWorkspace: {
@@ -87,7 +88,9 @@ const TabbedSidebar = ({ currentWorkspace }: Props) => {
                 collections.map((collection)=>(
                   <div className="flex flex-col justify-start items-start p-3 border-b" key={collection.id} >
 
-                    {/* <CollectionFolder collection={collection} /> */}
+                    <CollectionFolder collection={collection} />
+
+                    
 
                   </div>
                 ))
