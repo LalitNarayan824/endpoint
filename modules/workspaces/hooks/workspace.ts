@@ -26,7 +26,7 @@ export function useCreateWorkspace(){
   })
 }
 
-export function useGetWorkspaces(id:string){
+export function useGetWorkspace(id:string){
 
   return useQuery({
     queryKey:["workspace" , id],
